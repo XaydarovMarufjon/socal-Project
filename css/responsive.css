@@ -1,0 +1,140 @@
+@media (min-width: 1281px ){
+    /* PC */
+   
+}
+@media (min-width: 1024px ) and (max-width:1280px){ 
+     /* laptop */
+  
+}
+@media (min-width: 768px ) and (max-width: 1023px ) {
+   /* tablet */
+   nav h4{
+    font-size: 20px;
+    width: 20%;
+}
+.inp-search{
+  width: 30% !important;
+}
+nav button {
+    padding: 4px !important;
+    margin-left: 0px;
+}
+nav{
+    padding: 10px 0;
+}
+.main{
+    width: 55%;
+}
+body{
+    padding-top: 90px;
+}
+
+
+  
+}
+@media (min-width: 481px ) and ( max-width:767px) {
+    /* phone big */
+
+      nav h4{
+          font-size: 18px;
+          width: 15%;
+      }
+      .inp-search{
+        width: 30% !important;
+    }
+      nav button {
+          padding: 4px !important;
+          margin-left: 0px;
+      }
+      nav{
+          padding: 10px 0;
+      }
+      .main{
+          width: 75%;
+      }
+      body{
+          padding-top: 90px;
+      }
+      .admin {
+          width: 50px;
+      }
+  
+}
+@media (min-width: 320px ) and (max-width:480px) {
+    /* phone */
+    .inp-search{
+      display: none !important;
+    }
+    nav h4{
+        font-size: 16px;
+        width: 10%;
+    }
+    nav button {
+        padding: 4px !important;
+        margin-left: 30px;
+    }
+    nav{
+        padding: 10px 0;
+    }
+    .main{
+        width: 95%;
+    }
+    body{
+        padding-top: 90px;
+    }
+    .admin {
+        width: 50px;
+    }
+}
+@media (min-width: 240px ) and (max-width:319px) {
+    /* phone */
+    .inp-search{
+        display: none !important;
+      }
+      nav h4{
+          font-size: 12px;
+          width: 10%;
+      }
+      nav button {
+          padding: 4px !important;
+          margin-left: 30px;
+          font-size: 12px !important ;
+      }
+      nav{
+          padding: 10px 0;
+      }
+      .main{
+          width: 95%;
+      }
+      body{
+          padding-top: 80px;
+      }
+      .head img{
+        border-radius: 50%;
+        height: 100%;
+        margin-right: 10px;
+        width: 30px;
+        height: 30px;
+     }
+     .post_icon i{
+        font-size: 14px;
+        margin: 5px 10px 10px 0;
+    }
+    i.like{
+        width: 15px;
+        height: 10px;
+    }
+    .admin {
+        width: 30px;
+    }
+    .user_name {
+       margin: 0 !important;
+       font-size: 12px !important;
+      }
+
+      .del_btn{
+        padding: 2px 5px !important;
+        font-size: 10px !important;
+    }
+    
+}

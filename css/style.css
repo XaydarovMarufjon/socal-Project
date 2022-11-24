@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;;
+}
+body{
+    background-color: #F2F3F5;
+    padding-top: 100px;
+}
+header{
+    width: 100%;
+    background-color: #f8f8f8;
+    box-shadow: 2px 2px 7px  rgb(230, 230, 230);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.inp-search{
+    width: 25% !important;
+}
+nav{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+nav h1{
+    font-family: 'Segoe Script' !important;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.main{
+    width: 40%;
+    margin: 0 auto;
+    height: auto;
+}
+.cards{
+    position: relative;
+    width: 100%;
+    border: 1px solid gainsboro;
+    border-radius: 7px;
+    margin: 10px 0;
+    box-shadow: 0px 0px 5px  rgb(230, 230, 230);
+}
+.head{
+    padding:10px;
+    height: 60px;
+    border-bottom: 1px solid rgb(209, 209, 209);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.head img{
+   border-radius: 50%;
+   height: 100%;
+   margin-right: 10px;
+}
+.user_name{
+    display: inline-block;
+}
+
+.post_footer{
+    padding:10px;
+    border-top: 1px solid gray;
+    align-items: center;
+}
+.post_icon i{
+    font-size: 23px;
+    margin: 5px 10px 10px 0;
+    
+}
+.post_data {
+    font-size: 12px !important;
+}
+
+.post_img{
+    width: 100%;
+    height: auto;
+    
+}
+i.like{
+    width: 25px;
+    height: 27px;
+}
+.admin{
+    width: 60px;
+    border-radius: 50px;
+}
+.del_btn{
+    position: absolute !important;
+    right: 2%;
+    top: 2% !important;
+    border: none !important;
+    color: white !important;
+    border-radius: 5px !important;
+    padding: 2px 10px !important;
+}

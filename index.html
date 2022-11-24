@@ -1,13 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="./css/responsive.css">
+ 
+    <title>Socal project</title>
+ 
 </head>
 <body>
-    <h1> git hub darslari  </h1>
-    <span>asdlkf;</span>
+    
+    <header>
+        <div class="container">
+            <nav>
+              
+                <h4>Khaydarov Marufjon <i class="fa-brands fa-markdown"></i></h1>
+                <input type="search" placeholder="search..." class="inp-search form-control">
+                <!-- <img src="" alt="" class="admin"> -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Create Post +</button>
+                <img data-bs-toggle="modal" data-bs-target="#exampleModal2" src="./images/admin.png" class="admin" alt="">
+
+            </nav>
+        </div>
+    </header>
+
+   
+    <div class="main">
+       
+     <!-- my post -->
+
+     <div class="cards" >
+      <button onclick="funk(event)" class="btn btn-danger del_btn"> delete post </button>
+       <div class="head">
+          <img src="./images/admin.png" class="user_img" alt="">
+          <h6 class="user_name">Marufjon</h6>
+       </div>
+       <img src="./images/post.jpg" class="post_img" alt="">
+       <div class="post_footer">
+          <div class="post_icon">
+              <i class="fa-solid fa-heart like" style="color: red;" onclick="like(event)"></i>
+              <i class="fa-regular fa-comment"></i>
+              <i class="fa-regular fa-paper-plane"></i>
+          </div>
+              <h6 class="user_name">Marufjon</h6> say...
+              <p class="post_data">I was born on December 11, 1998 in Andijan region. My
+                programming career started when I was 21 years old. My
+                professional field is frontend web development.
+                Currently, I am working as a mentor in this field, learning new
+                things and working on new projects
+                
+
+
+                </p>
+  
+      </div>
+  
+    </div>
+
+     <!-- post -->
+
+       <div class="newPost">
+        
+       </div>
+       <div class="json"></div>
+    </div>
+
+
+<!-- modal post -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Your user name:</label>
+            <input type="text" placeholder="Write your user name" class="form-control" id="recipient-name" required>
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">About post...</label>
+            <textarea class="form-control" placeholder="Write about post " id="message-text" required></textarea>
+          </div>
+         <div class="mb-3">
+            <label  class="form-label">Upload photo url:</label>
+            <input class="form-control" placeholder="Copy and paste your photo url " type="text" id="img"  required/>
+         </div>
+
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" onclick="setJSON()" data-bs-dismiss="modal" aria-label="Close">Create post</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal user -->
+
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">user Photo :</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="./js/app.js"></script>
+    <script src="./js/test.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
 </body>
 </html>
